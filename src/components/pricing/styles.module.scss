@@ -1,0 +1,167 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.pricing {
+  > h2 {
+    @include onMobile {
+      margin-bottom: 8px;
+
+      font-size: 32px;
+    }
+
+    margin-bottom: 16px;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+
+    color: $color-text;
+  }
+
+  > h3 {
+    @include onMobile {
+      margin-bottom: 24px;
+
+      font-size: 16px;
+    }
+
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+
+    color: #9198aa;
+  }
+
+  .wrapper {
+    @include onMobile {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    display: flex;
+    gap: 80px;
+
+    .left,
+    .right {
+      @include onMobile {
+        gap: 20px;
+      }
+
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .pricing_item_title {
+      @include onMobile {
+        font-size: 20px;
+      } 
+     
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 130%;
+
+      color: $color-text;
+    }
+
+    .left {
+      > img {
+        @include onMobile {
+          width: 40px;
+          height: 40px;
+        }
+
+        width: 45px;
+        height: 45px;
+      }
+
+      .pricing_type {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        > p {
+          @include onMobile {
+            font-size: 14px;
+          }
+
+          font-size: 18px;
+          line-height: 130%;
+
+          color: $color-text;
+
+          > span {
+            font-weight: 700;
+
+            color: $color-black;
+          }
+        }
+      }
+    }
+
+    .right {
+      > h4 {
+        font-weight: 700;
+        line-height: 130%;
+        text-transform: uppercase;
+
+        color: $color-text;
+      }
+
+      .other_platform {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_heading {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          > span {
+            @include onMobile {
+              font-size: 14px;
+            }
+
+            font-size: 18px;
+            line-height: 130%;
+
+            color: rgba(30, 39, 61, 0.6);
+          }
+        }
+
+        &_price {
+          @include onMobile {
+            font-size: 20px;
+          }
+
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 130%;
+
+          color: $color-text;
+        }
+      }
+
+      .disclaimer {
+        @include onMobile {
+          margin-top: -12px;
+
+          font-size: 12px;
+        }
+
+        margin-top: -16px;
+
+        font-weight: 500;
+        line-height: 130%;
+
+        color: rgba(30, 39, 61, 0.60);
+      }
+    }
+  }
+}

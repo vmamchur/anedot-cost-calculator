@@ -1,0 +1,17 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  @include onMobile {
+    padding: 40px 16px;
+
+    gap: 60px;
+  }
+
+  max-width: 1296px;
+  padding: 140px 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+@import "./styles/fonts.scss";
+@import "./styles/null.scss";
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
+
+:root {
+  font-family: 'Google Sans';
+  background-color: $color-background;
+  overflow-x: hidden;
+}

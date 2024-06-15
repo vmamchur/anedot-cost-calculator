@@ -1,0 +1,40 @@
+@import "../../../../styles/variables.scss";
+
+.tooltip {
+  width: max-content;
+  padding: 2px 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: $color-primary;
+  border-radius: 8px;
+
+  &::after {
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    bottom: -5px;
+
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $color-primary;
+  }
+
+  > span {
+    font-weight: 500;
+    text-wrap: nowrap;
+    user-select: none;
+
+    color: $color-white;
+  }
+}

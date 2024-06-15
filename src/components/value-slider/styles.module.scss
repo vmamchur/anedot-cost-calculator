@@ -1,0 +1,9 @@
+@import '../../styles/mixins.scss';
+
+.slider {
+  @include onMobile {
+    margin-left: 4px;
+  }
+
+  margin-left: 10px;
+}

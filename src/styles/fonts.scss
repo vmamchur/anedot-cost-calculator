@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Google Sans";
+  font-weight: 400;
+  src: local("Product Sans Regular"),
+    url("/fonts/ProductSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Medium Regular";
+  font-weight: 500;
+  src: local("Product Sans Medium Regular"),
+    url("/fonts/ProductSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-weight: 700;
+  src: local("Product Sans Bold"),
+    url("/fonts/ProductSans-Bold.woff") format("woff");
+}
