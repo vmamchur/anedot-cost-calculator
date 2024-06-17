@@ -1,7 +1,7 @@
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 
-import './Slider.scss';
+import "./Slider.scss";
 
 import Tooltip from "./ui/tooltip";
 
@@ -25,11 +25,19 @@ const ValueSlider = ({
         max={max}
         value={value}
         onChange={setValue}
-        trackStyle={{
-          backgroundColor: "#D0DEFD",
-        }}
-        railStyle={{
-          backgroundColor: "#D0DEFD",
+        styles={{
+          track: {
+            backgroundColor: "#D0DEFD",
+          },
+          rail: {
+            backgroundColor: "#D0DEFD",
+          },
+          handle: {
+            backgroundColor: "#1761F5",
+            border: "none",
+            boxShadow: "none",
+            opacity: 1,
+          },
         }}
         dotStyle={{
           backgroundColor: "#D0DEFD",
@@ -38,12 +46,6 @@ const ValueSlider = ({
           bottom: "-6px",
           border: "none",
           borderRadius: 0,
-        }}
-        handleStyle={{
-          backgroundColor: "#1761F5",
-          border: "none",
-          boxShadow: "none",
-          opacity: 1,
         }}
         marks={marks}
         handleRender={(renderProps) => (
