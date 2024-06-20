@@ -5,11 +5,11 @@ import PricingItemWrapper from "./ui/pricing-item-wrapper";
 
 const PRICING_TYPES = [
   {
-    title: "501(c)(З)",
+    title: "501(c)(3)",
     paymentMethods: [
       {
         title: "Credit/debit cards, Apple Pay, Google Pay, PayPal",
-        price: "3.3% + 30с",
+        price: "3.3% + 30c",
       },
       {
         title: "ACH",
@@ -22,7 +22,7 @@ const PRICING_TYPES = [
     paymentMethods: [
       {
         title: "Credit/debit cards, Apple Pay, Google Pay, PayPal",
-        price: "4.0% + 30с",
+        price: "4.0% + 30c",
       },
     ],
   },
@@ -31,7 +31,7 @@ const PRICING_TYPES = [
     paymentMethods: [
       {
         title: "Credit/debit cards, Apple Pay, Google Pay, PayPal",
-        price: "3.0% + 30с",
+        price: "3.0% + 30c",
       },
       {
         title: "ACH",

@@ -1,20 +1,17 @@
 @font-face {
-  font-family: "Google Sans";
+  font-family: "Outfit";
   font-weight: 400;
-  src: local("Product Sans Regular"),
-    url("/fonts/ProductSans-Regular.woff") format("woff");
+  src: url("/fonts/Outfit-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Product Sans Medium Regular";
+  font-family: "Outfit";
   font-weight: 500;
-  src: local("Product Sans Medium Regular"),
-    url("/fonts/ProductSans-Medium.woff") format("woff");
+  src: url("/fonts/Outfit-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Google Sans";
+  font-family: "Outfit";
   font-weight: 700;
-  src: local("Product Sans Bold"),
-    url("/fonts/ProductSans-Bold.woff") format("woff");
+  src: url("/fonts/Outfit-Bold.ttf") format("truetype");
 }

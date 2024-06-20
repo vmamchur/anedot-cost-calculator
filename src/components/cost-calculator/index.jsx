@@ -11,7 +11,7 @@ import styles from "./styles.module.scss";
 
 const TYPES_OF_ORGANIZATION = [
   {
-    name: "501(c)(​З)",
+    name: "501(c)(​3)",
     rate: 0.033,
   },
   {
